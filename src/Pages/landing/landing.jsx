@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "../landing/style.scss";
 
 class Calc extends React.Component {
   
@@ -38,13 +39,13 @@ class Calc extends React.Component {
   
     calculateBMI(){
       if (this.state.weight && this.state.heightFeet && this.state.heightInch){
-        // BMI Formula = (WEIGHT[in pounds] / (HEIGHT[in inches] * HEIGHT[in inches])) * 703;
+    
         let INCHES_IN_FEET = 12;
   
         var height = Number(this.state.heightFeet);
-            // convert feet to inches
+           
             height *= INCHES_IN_FEET;
-            // add the inches input field
+          
             height += Number(this.state.heightInch);
   
         let weight = this.state.weight;
@@ -63,19 +64,19 @@ class Calc extends React.Component {
       };
       
       if (bmi <= 18.5){
-        bmiResults.label = 'Underweight';
+        bmiResults.label = 'Underweight😒';
         bmiResults.alertClass = 'alert-danger';
       } 
       else if (bmi <= 24.9) {
-        bmiResults.label = 'Normal weight';
+        bmiResults.label = 'Normal weight😍';
         bmiResults.alertClass = 'alert-success';
       }
       else if (bmi <= 29.9){
-        bmiResults.label = 'Overweight';
+        bmiResults.label = 'Overweight😮';
         bmiResults.alertClass = 'alert-warning';
       }
       else if (bmi >= 30) {
-        bmiResults.label = 'Obesity';
+        bmiResults.label = 'Obesity😱';
         bmiResults.alertClass = 'alert-danger';
       } else {
         bmiResults.label = 'BMI';
