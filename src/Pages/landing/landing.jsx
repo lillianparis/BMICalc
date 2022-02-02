@@ -94,7 +94,7 @@ class Calc extends React.Component {
   
       return (
           <>
-     
+     <div class="wrap">
         <div className="contents">
           <div className="row">
             <div className="col-xs-12">
@@ -138,6 +138,7 @@ class Calc extends React.Component {
             </div>
   
           </div>
+        </div>
         </div>
         </>
       );
