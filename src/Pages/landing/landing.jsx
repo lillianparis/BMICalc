@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "../landing/style.scss";
+import Title from "../Components/Typed/typed";
 
 class Calc extends React.Component {
   
@@ -92,10 +93,12 @@ class Calc extends React.Component {
       let results = this.getBMIResults(bmi);
   
       return (
-        <div className="App container">
+          <>
+     
+        <div className="contents">
           <div className="row">
             <div className="col-xs-12">
-              <h1>BMI Calculator</h1>
+            <Title />
               <p>Enter your weight and height below.</p>
             </div>
           </div>
@@ -134,6 +137,7 @@ class Calc extends React.Component {
   
           </div>
         </div>
+        </>
       );
     }
   }
