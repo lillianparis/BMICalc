@@ -98,7 +98,9 @@ class Calc extends React.Component {
         <div className="contents">
           <div className="row">
             <div className="col-xs-12">
+              <div id="title">
             <Title />
+            </div>
               <p>Enter your weight and height below.</p>
             </div>
           </div>

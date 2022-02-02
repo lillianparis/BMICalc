@@ -1,5 +1,5 @@
 import Typed from 'react-typed';
-import Container from 'react-bootstrap/container';
+
 import { Grid } from "@material-ui/core";
 
 
